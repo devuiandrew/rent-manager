@@ -1,0 +1,61 @@
+# ─── Python / Django ─────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+backend/logs/
+backend/backups/
+*.log
+local_settings.py
+media/
+staticfiles/
+
+# ─── Environment / secrets ───────────────────────────
+.env
+.env.local
+.env.*.local
+frontend/.env.network
+frontend/.env.production
+frontend/.env.development
+!.env.example
+
+# ─── Node / Vite / Electron ──────────────────────────
+node_modules/
+dist/
+dist-electron/
+build/
+frontend/release/
+*.tsbuildinfo
+.npm
+.eslintcache
+
+# ─── IDE / OS ────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Claude Code (local user overrides) ──────────────
+.claude/settings.local.json
+
+# ─── Не для публічного репо ──────────────────────────
+CLAUDE.md
+.claude/
